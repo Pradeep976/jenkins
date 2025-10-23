@@ -6,6 +6,16 @@ This guide provides instructions to set up Jenkins Blue Ocean using Docker.
 - Docker installed on your system.
 - A Docker network named `jenkins`.
 
+## Build the Docker Image
+
+Before running the Jenkins Blue Ocean container, build the Docker image using the following command:
+
+```bash
+docker build -t myjenkins-blueocean:2.528.1-1 .
+```
+
+This command creates a Docker image tagged as `myjenkins-blueocean:2.528.1-1` using the `Dockerfile` in the current directory.
+
 ## Steps to Run Jenkins Blue Ocean
 
 1. **Run the Jenkins Blue Ocean Docker Container**
